@@ -1,0 +1,40 @@
+# Python
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+*.pyd
+.pytest_cache/
+.mypy_cache/
+
+# Local configuration and secrets
+.env
+.env.*
+!.env.example
+.vscode/
+.idea/
+
+# Models and generated runtime data
+*.pt
+*.pth
+*.onnx
+weights/
+snapshots/
+*.db
+*.db-shm
+*.db-wal
+
+# Camera calibration is specific to the user's room
+zones.json
+calibration_frame.jpg
+camera_diagnostics/
+findback_camera_diagnostics*/
+
+# Local backups created during development
+*_backup.*
+*_before_*.*
+
+# Logs and operating-system files
+*.log
+Thumbs.db
+.DS_Store
